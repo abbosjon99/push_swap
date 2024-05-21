@@ -6,7 +6,7 @@
 /*   By: akeldiya <akeldiya@student.42warsaw.pl>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/05/10 20:47:21 by akeldiya          #+#    #+#             */
-/*   Updated: 2024/05/12 10:37:42 by akeldiya         ###   ########.fr       */
+/*   Updated: 2024/05/21 10:26:08 by akeldiya         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,6 +20,8 @@ static bool	ft_numchecker(char *str)
 		str++;
 	if (*str == '-' || *str == '+')
 		str++;
+	if (!(*str >= '0' && *str <= '9'))
+		return (false);
 	while (*str >= '0' && *str <= '9')
 		str++;
 	while (*str == 32 || (8 < *str && *str < 14))

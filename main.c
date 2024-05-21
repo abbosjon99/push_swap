@@ -6,7 +6,7 @@
 /*   By: akeldiya <akeldiya@student.42warsaw.pl>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/05/10 10:22:37 by akeldiya          #+#    #+#             */
-/*   Updated: 2024/05/12 17:40:08 by akeldiya         ###   ########.fr       */
+/*   Updated: 2024/05/21 10:18:03 by akeldiya         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,7 +21,7 @@ int	main(int argc, char **argv)
 	a = NULL;
 	b = NULL;
 	if (argc == 1 || (argc == 2 && !argv[1][0]))
-		return (1);
+		error_n_free(NULL, NULL, 0);
 	argv++;
 	if (argc == 2)
 	{

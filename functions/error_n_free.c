@@ -6,7 +6,7 @@
 /*   By: akeldiya <akeldiya@student.42warsaw.pl>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/05/10 20:45:15 by akeldiya          #+#    #+#             */
-/*   Updated: 2024/05/12 10:32:50 by akeldiya         ###   ########.fr       */
+/*   Updated: 2024/05/21 10:15:27 by akeldiya         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -50,6 +50,6 @@ void	error_n_free(t_stack **a, char **argv, bool argvfree)
 	ft_free_stack(a);
 	if (argvfree)
 		free_argv(argv);
-	ft_printf("Error\n");
+	write(2, "Error\n", 6);
 	exit (1);
 }
